@@ -4,7 +4,7 @@ const closeBtn = document.querySelector(".close-modal");
 
 // Open modal
 openBtn.onclick = () => {
-  modal.style.display = "flex"; // must match your CSS flex alignment
+  modal.style.display = "block"; // Cypress expects 'block'
 }
 
 // Close modal when clicking the close button

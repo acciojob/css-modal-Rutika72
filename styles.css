@@ -9,19 +9,18 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.5);
-  justify-content: center; /* center modal */
-  align-items: center;     /* center modal */
 }
 
-/* Modal content box */
+/* Center modal-content */
 .modal-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   width: 400px;
+  margin: 100px auto; /* centers horizontally and adds top margin */
 }
 
-/* Header */
+/* Modal header */
 .modal-header {
   display: flex;
   justify-content: space-between;
@@ -31,4 +30,9 @@
 .close-modal {
   cursor: pointer;
   font-size: 24px;
+}
+
+/* Modal body */
+.modal-body {
+  margin-top: 10px;
 }
