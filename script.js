@@ -1,20 +1,20 @@
-const modal = document.querySelector(".modal");
+const modal = document.getElementById("myModal");
 const openBtn = document.getElementById("openModal");
 const closeBtn = document.querySelector(".close-modal");
 
 // Open modal
-openBtn.addEventListener("click", () => {
-  modal.style.display = "block";  // Set to block for the test
-});
+openBtn.onclick = () => {
+  modal.style.display = "flex"; // must match your CSS flex alignment
+}
 
-// Close modal when clicking close button
-closeBtn.addEventListener("click", () => {
+// Close modal when clicking the close button
+closeBtn.onclick = () => {
   modal.style.display = "none";
-});
+}
 
-// Close modal when clicking outside content
-window.addEventListener("click", (e) => {
+// Close modal when clicking outside the modal-content
+window.onclick = (e) => {
   if (e.target === modal) {
     modal.style.display = "none";
   }
-});
+}

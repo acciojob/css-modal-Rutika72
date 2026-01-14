@@ -1,13 +1,29 @@
-<button id="openModal">Open Modal</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Modal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-<div class="modal">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h2>Modal Header</h2>
-      <span class="close-modal">&times;</span>
-    </div>
-    <div class="modal-body">
-      <p>Modal Body Content</p>
+  <!-- Open Modal Button -->
+  <button id="openModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+        <span class="close-modal">&times;</span>
+      </div>
+      <div class="modal-body">
+        <p>Modal Body Content</p>
+      </div>
     </div>
   </div>
-</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
